@@ -1,0 +1,33 @@
+﻿<Window x:Class="TicTacToe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="675" Width="600">
+    <Grid x:Name="main">
+        <Button x:Name="A1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Click="Button_Click" FontSize="100" Margin="49,34,0,0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+        <Button x:Name="A2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="150" Width="150" Margin="0,34,0,0" Click="Button_Click" FontSize="100" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+        <Button x:Name="A3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Margin="395,34,0,0" Click="Button_Click"  FontSize="100" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+
+        <Button x:Name="B1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Click="Button_Click" FontSize="100" Margin="49,203,0,0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+        <Button x:Name="B2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="150" Width="150" Margin="0,203,0,0" Click="Button_Click" FontSize="100" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+        <Button x:Name="B3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Click="Button_Click" FontSize="100" Margin="395,203,0,0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+
+        <Button x:Name="C1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Click="Button_Click" FontSize="100" Margin="49,375,0,0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+        <Button x:Name="C2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="150" Width="150" Click="Button_Click" FontSize="100" Margin="0,375,0,0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+        <Button x:Name="C3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Click="Button_Click" FontSize="100" Margin="395,375,0,0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+
+        <Label Content="X'in galibiyet sayısı" HorizontalAlignment="Left" Margin="61,540,0,0" VerticalAlignment="Top" Width="126" FontWeight="ExtraBold"/>
+        <Label Content="Beraberlik sayısı" HorizontalAlignment="Center" Margin="0,540,0,0" VerticalAlignment="Top" Width="108" FontWeight="ExtraBold"/>
+        <Label Content="O'nun galibiyet sayısı" HorizontalAlignment="Left" Margin="402,540,0,0" VerticalAlignment="Top" Width="136" FontWeight="ExtraBold"/>
+
+        <Label x:Name="xSayisi" Content="0" HorizontalAlignment="Left" Margin="116,571,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="beraberlikSayisi" Content="0" HorizontalAlignment="Center" Margin="0,571,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="oSayisi" Content="0" HorizontalAlignment="Left" Margin="462,571,0,0" VerticalAlignment="Top"/>
+        
+        <Button x:Name="sifirla" Content="Tekrar oyna" HorizontalAlignment="Center" Margin="0,597,0,0" VerticalAlignment="Top" Width="70" Click="Sifirla"/>
+
+    </Grid>
+</Window>
